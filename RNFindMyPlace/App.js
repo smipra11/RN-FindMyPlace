@@ -28,6 +28,7 @@ import {
 
 import Entype from 'react-native-vector-icons/Entypo';
 import Post from './src/components/post';
+import DestinationSearch from './src/screens/DestinationSearch';
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -54,13 +55,14 @@ const Section = ({children, title}): Node => {
   );
 };
 import HomeScreen from './src/screens/Home/index';
+import SearchResultScreen from './src/screens/SearchResult';
 import feed from './assets/data/feed';
 const post1 = feed[0];
 
 const App: () => Node = () => {
   return (
     <SafeAreaView>
-      <Post post={post1} />
+      <DestinationSearch />
     </SafeAreaView>
   );
 };

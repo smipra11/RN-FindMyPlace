@@ -5,10 +5,7 @@ const Post = ({post}) => {
   console.log(post);
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.Image}
-        source={require('../../../assets/Image/House/housematch4.png')}
-      />
+      <Image style={styles.Image} source={{uri: post.image}} />
       <Text style={styles.bedroom}>
         {post.bed} bed {post.bedroom} bedroom
       </Text>

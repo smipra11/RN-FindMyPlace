@@ -6,8 +6,9 @@ const styles = StyleSheet.create({
   },
   Image: {
     width: '100%',
+    aspectRatio: 3 / 2,
     resizeMode: 'cover',
-    borderRadius: 20,
+    borderRadius: 10,
   },
   prices: {
     fontSize: 16,
