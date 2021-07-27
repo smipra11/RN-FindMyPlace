@@ -54,19 +54,13 @@ const Section = ({children, title}): Node => {
   );
 };
 import HomeScreen from './src/screens/Home/index';
+import feed from './assets/data/feed';
+const post1 = feed[0];
 
 const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-
-      <Post />
+    <SafeAreaView>
+      <Post post={post1} />
     </SafeAreaView>
   );
 };
