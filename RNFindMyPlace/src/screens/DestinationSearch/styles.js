@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   },
   textinput: {
     fontSize: 18,
+    marginTop: 50,
   },
   row: {
     flexDirection: 'row',

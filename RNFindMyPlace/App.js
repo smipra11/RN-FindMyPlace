@@ -22,6 +22,7 @@ import SearchResultScreen from './src/screens/SearchResult';
 import feed from './assets/data/feed';
 const post1 = feed[0];
 import Router from './src/navigation/router';
+import {withAuthenticator} from 'aws-amplify-react-native';
 
 const App = () => {
   return (
@@ -31,4 +32,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
